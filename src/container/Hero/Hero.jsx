@@ -2,11 +2,11 @@ import React from 'react'
 import './Hero.scss'
 import {motion} from 'framer-motion'
 import {BiChevronsDown} from 'react-icons/bi'
+import {BsPhone} from 'react-icons/bs'
 
 const Hero = () => {
   return (
-    <div className='hero' id='home'>
-        
+    <div className='hero' id='home'>      
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1.2 }}
@@ -23,11 +23,12 @@ const Hero = () => {
         </a>
       </motion.div>
 
-      <div className='down vibrate-1'>
+      {/* <div className='down vibrate-1'>
         <div className='subDown'>
           <BiChevronsDown className='downIcon'/>
+          <BsPhone className='downIcon'/>
         </div>
-      </div>
+      </div> */}
      
     </div>
   )
