@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Advice.scss'
+import spinner from '../../assets/Spinner.gif';
 
 const Advice = () => {
   const [advice, setAdvice] = useState([]);
@@ -59,7 +60,7 @@ const Advice = () => {
             
             <div className='advice_item'>
                 {reload ? 
-                    <img src='/Spinner.gif' />
+                    <img src={spinner} />
                     :
                     <ul>
                         {advice.map((adviceItem, index) => (

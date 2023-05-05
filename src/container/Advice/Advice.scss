@@ -46,7 +46,9 @@
     } 
     
     @media screen and (max-width: 450px) {
-        margin-top: 0rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        // height: 90vh;
         .advice_item ul{
             flex-direction: column;
 
